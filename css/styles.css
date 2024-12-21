@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 24px 156px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+.gallery-item {
+  width: calc((100% - 40px) / 3);
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+.basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
